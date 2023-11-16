@@ -22,22 +22,24 @@ animations = [{
 "texture": ExtResource("5_e6h6b")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"idle",
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23dq8"]
-size = Vector2(14, 20)
+size = Vector2(56, 76)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_6drso")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3.75, 3.75)
 sprite_frames = SubResource("SpriteFrames_1psvl")
-frame = 1
-frame_progress = 0.291666
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.424007
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 4)
+position = Vector2(3, 15)
 shape = SubResource("RectangleShape2D_23dq8")
