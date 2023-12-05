@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctiubmfjum3hi"]
+[gd_scene load_steps=3 format=3 uid="uid://ctiubmfjum3hi"]
 
 [ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/wizzard_character.tscn" id="1_n0pat"]
+[ext_resource type="Script" path="res://Scripts/Wizzard/wizzardMovement.cs" id="2_1spdg"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_n0pat")]
+[node name="Wizzard" parent="." instance=ExtResource("1_n0pat")]
 position = Vector2(178, 95)
+script = ExtResource("2_1spdg")
