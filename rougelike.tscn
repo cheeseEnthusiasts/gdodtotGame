@@ -8,3 +8,6 @@
 [node name="Wizzard" parent="." instance=ExtResource("1_n0pat")]
 position = Vector2(178, 95)
 script = ExtResource("2_1spdg")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
