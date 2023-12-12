@@ -22,7 +22,12 @@ public partial class wizzardMovement : CharacterBody2D
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
 			velocity.Y = Mathf.MoveToward(Velocity.Y, 0, Speed);
 		}
-		
+		if (velocity.X < 0) 
+		{
+			
+			
+			
+		}
 		
 		Velocity = velocity;
 		MoveAndSlide();

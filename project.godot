@@ -24,6 +24,10 @@ window/stretch/mode="viewport"
 
 project/assembly_name="Git Hub"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 up={
