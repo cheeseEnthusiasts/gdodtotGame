@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctiubmfjum3hi"]
+[gd_scene load_steps=4 format=3 uid="uid://ctiubmfjum3hi"]
 
+[ext_resource type="TileSet" uid="uid://beqw7rnxjbo3y" path="res://Tilesheets/mainlevelbuild.tres" id="1_i5dlm"]
 [ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/wizzard_character.tscn" id="1_n0pat"]
 [ext_resource type="Script" path="res://Scripts/Wizzard/wizzardMovement.cs" id="2_1spdg"]
 
 [node name="Node2D" type="Node2D"]
 
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_i5dlm")
+format = 2
+layer_0/tile_data = PackedInt32Array(196610, 3080192, 27, 262146, 3080192, 28, 196611, 3145728, 27, 262147, 3145728, 28)
+
 [node name="Wizzard" parent="." instance=ExtResource("1_n0pat")]
 position = Vector2(178, 95)
 script = ExtResource("2_1spdg")
-
-[node name="TileMap" type="TileMap" parent="."]
-format = 2
