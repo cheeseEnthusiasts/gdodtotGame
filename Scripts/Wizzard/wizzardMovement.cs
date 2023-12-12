@@ -4,8 +4,8 @@ using System;
 public partial class wizzardMovement : CharacterBody2D
 {
 	public const float Speed = 300.0f;
-
-
+	public bool isFacingRight;
+	public Node2D characterNode;
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
@@ -22,14 +22,18 @@ public partial class wizzardMovement : CharacterBody2D
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
 			velocity.Y = Mathf.MoveToward(Velocity.Y, 0, Speed);
 		}
-		if (velocity.X < 0) 
-		{
-			
-			
-			
-		}
 		
-		Velocity = velocity;
+	
 		MoveAndSlide();
+		if (characterNode.Scale.X > 0) 
+		{
+			isFacingRight = true;
+		}
+
+
+		if(isFacingRight && Input.IsKeyPressed(Key.E))
+		{
+			ApplyScale(new Vector2(-1,1));
+		}
 	}
 }
