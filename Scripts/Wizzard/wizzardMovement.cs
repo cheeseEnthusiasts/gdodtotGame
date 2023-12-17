@@ -52,3 +52,5 @@ public partial class wizzardMovement : CharacterBody2D
 		
 	}
 }
+
+

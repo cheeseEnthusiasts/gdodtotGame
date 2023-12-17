@@ -1,0 +1,7 @@
+[gd_resource type="TileSet" load_steps=2 format=3 uid="uid://0wk6lbm7f78a"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_oi3gi"]
+resource_name = "mainlevb"
+
+[resource]
+sources/2 = SubResource("TileSetScenesCollectionSource_oi3gi")
