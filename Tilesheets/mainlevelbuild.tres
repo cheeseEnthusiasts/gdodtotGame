@@ -3083,9 +3083,6 @@ texture = ExtResource("1_kye5u")
 55:0/0 = 0
 55:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 55:0/0/physics_layer_0/angular_velocity = 0.0
-32:30/0 = 0
-32:30/0/physics_layer_0/linear_velocity = Vector2(0, 0)
-32:30/0/physics_layer_0/angular_velocity = 0.0
 
 [resource]
 physics_layer_0/collision_layer = 1
