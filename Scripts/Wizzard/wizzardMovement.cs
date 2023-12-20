@@ -2,6 +2,8 @@ using Godot;
 using System;
 using System.Data.Common;
 
+
+
 public partial class wizzardMovement : CharacterBody2D
 {
 	public float Speed = 100.0f;
@@ -51,6 +53,12 @@ public partial class wizzardMovement : CharacterBody2D
 		MoveAndSlide();
 		
 	}
+	public void wizzarding()
+	{
+		
+	}
+	
 }
+
 
 
