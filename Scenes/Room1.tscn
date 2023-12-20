@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://cereni4mjpmv1"]
 
-[ext_resource type="TileSet" uid="uid://beqw7rnxjbo3y" path="res://Tilesheets/mainlevelbuild.tres" id="1_11d2l"]
-[ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/wizzard_character.tscn" id="2_dl0nd"]
+[ext_resource type="TileSet" uid="uid://beqw7rnxjbo3y" path="res://Tilesheets/mainStructure.tres" id="1_11d2l"]
+[ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/sprites/wizzard_character.tscn" id="2_dl0nd"]
 [ext_resource type="Script" path="res://Scripts/Wizzard/wizzardMovement.cs" id="3_bg4i3"]
 [ext_resource type="Script" path="res://Scripts/Slime.gd" id="4_4l8fx"]
 [ext_resource type="Texture2D" uid="uid://di28ob07ejxf4" path="res://JaydenArt/mystic_woods_free_2/sprites/characters/slime.png" id="5_tscqn"]

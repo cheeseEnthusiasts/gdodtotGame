@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://ctiubmfjum3hi"]
 
-[ext_resource type="TileSet" uid="uid://beqw7rnxjbo3y" path="res://Tilesheets/mainlevelbuild.tres" id="1_i5dlm"]
-[ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/wizzard_character.tscn" id="1_n0pat"]
+[ext_resource type="TileSet" uid="uid://beqw7rnxjbo3y" path="res://Tilesheets/mainStructure.tres" id="1_i5dlm"]
+[ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/sprites/wizzard_character.tscn" id="1_n0pat"]
 [ext_resource type="Script" path="res://Scripts/Wizzard/wizzardMovement.cs" id="2_1spdg"]
 [ext_resource type="Shader" path="res://rougelike.gdshader" id="4_g6tck"]
 [ext_resource type="Script" path="res://Scripts/Camera2D.cs" id="4_styk3"]
 [ext_resource type="Script" path="res://Scripts/RayCast2D.cs" id="5_8ekf7"]
-[ext_resource type="PackedScene" uid="uid://dkxsejvodfrmh" path="res://slime.tscn" id="7_25ga1"]
+[ext_resource type="PackedScene" uid="uid://dkxsejvodfrmh" path="res://Scenes/sprites/slime.tscn" id="7_25ga1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_c11c4"]
 shader = ExtResource("4_g6tck")
