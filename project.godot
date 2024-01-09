@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="roguelike"
-run/main_scene="res://rougelike.tscn"
-config/features=PackedStringArray("4.1", "C#", "GL Compatibility")
+run/main_scene="res://Scenes/FirstHall.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]

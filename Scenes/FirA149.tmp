@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgkfam5fwvp82"]
+[gd_scene load_steps=6 format=3 uid="uid://dgkfam5fwvp82"]
 
 [ext_resource type="TileSet" uid="uid://beqw7rnxjbo3y" path="res://Tilesheets/mainlevelbuild.tres" id="1_4268o"]
 [ext_resource type="PackedScene" uid="uid://bguo7ck7wn78n" path="res://Scenes/wizzard_character.tscn" id="2_w2wdn"]
 [ext_resource type="Script" path="res://Scenes/aaaa.gd" id="3_du5ye"]
+[ext_resource type="Script" path="res://Scenes/CollisionShape2D.cs" id="4_83tbn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nqi5j"]
 size = Vector2(25, 32)
@@ -36,3 +37,4 @@ position = Vector2(-61, 167)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(2.5, 2)
 shape = SubResource("RectangleShape2D_nqi5j")
+script = ExtResource("4_83tbn")

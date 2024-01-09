@@ -2,7 +2,7 @@ extends Node
 
 var wizzard_current_attack = false
 
-var current_scene = "rougelike" #StartingHall
+var current_scene = "FirstHall" #StartingHall
 var transition_scene = false
 
 var wizzard_exit_rougelike_posx = 0
