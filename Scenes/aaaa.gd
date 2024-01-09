@@ -6,7 +6,7 @@ var moving : bool = false
 var characterNode : Node2D
 var cameraNode : Camera2D
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	var velocity : Vector2 = get_velocity()
 
 	var direction : Vector2 = Vector2.ZERO
@@ -27,11 +27,17 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 		moving = false
 
-	if moving && Input.is_action_pressed("Shift"):
+	if Input.is_key_pressed(KEY_SHIFT):
 		Speed = 200.0
 	else:
 		Speed = 100.0
-
+	if velocity.x < 0 && isFacingRight == true:
+		$/root/Node2D/Wizzard.scale.x = -0.3
+		isFacingRight = false
+	if velocity.x > 0 && isFacingRight == false:
+		$/root/Node2D/Wizzard.scale.x = -0.3
+		isFacingRight = true
+	
 
 
 	set_velocity(velocity)
